@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "SukhumvitSet";
+  src: url("../src/assets/fonts/SukhumvitSet-Text.ttf");
+}
+
+@font-face {
+  font-family: "SukhumvitSet-Medium";
+  src: url("../src/assets/fonts/SukhumvitSet-Medium.ttf");
+}
+
+@font-face {
+  font-family: "SukhumvitSet-Bold";
+  src: url("../src/assets/fonts/SukhumvitSet-Bold.ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
