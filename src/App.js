@@ -4,6 +4,7 @@ import {authProvider} from "./authProvider";
 import {AzureAD, AuthenticationState} from "react-aad-msal";
 import {Navigate, Route, Routes} from "react-router-dom";
 import Profile from "./screens/profile";
+import moment from "moment";
 
 function App() {
   const auth = () =>( <AzureAD provider={authProvider} forceLogin={false}>
@@ -19,6 +20,8 @@ function App() {
                   <div className={'w-full h-full bg-white rounded-xl shadow-md'}>
                     <div className={'flex flex-col p-5 justify-center text-center'}>
                         <span className={'mt-5'}>
+                          <p>{moment().unix()}</p>
+                          <p>{ moment().format("yyyy-MM-DD hh:mm")}</p>
                           <p className={'font-sukhumvit font-bold text-2xl text-gray-600'}>ระบบเช็คชื่อเข้าติววิชา JavaScript</p>
                         </span>
                       <span className={'mt-5 mx-auto'}>
