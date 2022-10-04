@@ -123,7 +123,7 @@ const Profile = () => {
                           <p className={'font-sukhumvit font-bold text-xl '}>รายการเช็คอินการติว</p>
                         </span>
                         <span className={'flex w-auto md:w-full mt-10 '}>
-                          <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                          <table className="w-full text-sm text-left text-gray-500 ">
                             <thead className="w-auto font-sukhumvit font-bold text-lg text-gray-700 bg-blue-50">
                               <tr>
                                   <th scope="col" className="py-3 px-6">
@@ -144,9 +144,9 @@ const Profile = () => {
                               (quizs && isRefec) && quizs.map((quiz,key) => {
                                 return (
                                   <tr key={key}
-                                    className="font-sukhumvit bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    className="font-sukhumvit bg-white border-b hover:bg-gray-50">
                                     <th scope="row"
-                                        className="py-4 px-6 text-xs md:text-base text-gray-900 whitespace-nowrap dark:text-white">
+                                        className="py-4 px-6 text-xs md:text-base text-gray-900 whitespace-nowrap">
                                       {quiz?.title}
                                     </th>
                                     <td className="py-4 px-6 hidden md:flex">
