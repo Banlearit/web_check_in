@@ -5,7 +5,7 @@ const config = {
   auth: {
     authority: 'https://login.microsoftonline.com/6f4432dc-20d2-441d-b1db-ac3380ba633d',
     clientId: '4593d177-18c2-4c7c-8769-b27ba7b93f40',
-    redirectUri: 'https://www.tarkom-projects.com/'
+    redirectUri: 'https://www.tarkom-projects.com/callback'
   },
   cache: {
     cacheLocation: "localStorage",
