@@ -110,31 +110,31 @@ const Profile = () => {
                     <div className={'flex w-10/12 h-5/6 bg-white shadow-lg rounded-xl mx-auto my-auto'}>
                       <div className={'flex w-full flex-col p-5'}>
                         <span className={'flex w-full space-x-10 items-center'}>
-                          <span className={'flex w-1/2'}>
+                          <span className={'flex w-full md:w-1/2'}>
                             <p
-                              className={'font-sukhumvit font-bold text-3xl'}>{`สวัสดี ${accountInfo.account.name}`}</p>
+                              className={'font-sukhumvit font-bold text-xl md:text-3xl'}>{`สวัสดี ${accountInfo.account.name}`}</p>
                           </span>
                           <span className={'flex justify-end w-1/2'}>
-                            <button className={'font-sukhumvit font-bold text-xl text-red-400'}
+                            <button className={'font-sukhumvit font-bold text-sm md:text-xl text-red-400'}
                                     onClick={logout}>ออกจากระบบ</button>
                           </span>
                         </span>
                         <span className={'mt-5'}>
-                          <p className={'font-sukhumvit font-bold text-xl '}>รายการเช็คอินการติว</p>
+                          <p className={'font-sukhumvit font-bold text-lg md:text-xl '}>รายการเช็คอินการติว</p>
                         </span>
                         <span className={'flex w-auto md:w-full mt-10 '}>
                           <table className="w-full text-sm text-left text-gray-500 ">
-                            <thead className="w-auto font-sukhumvit font-bold text-lg text-gray-700 bg-blue-50">
+                            <thead className="w-auto font-sukhumvit font-bold text-sm md:text-lg text-gray-700 bg-blue-50 ">
                               <tr>
-                                  <th scope="col" className="py-3 px-6">
+                                  <th scope="col" className="py-2 md:py-3 px-3 md:px-6">
                                       หัวข้อ
                                   </th>
-                                  <th scope="col" className="py-3 px-6 hidden md:flex">
+                                  <th scope="col" className="py-2 md:py-3 px-3 md:px-6 hidden md:flex">
                                   </th>
-                                  <th scope="col" className="py-3 px-6">
+                                  <th scope="col" className="py-2 md:py-3 px-3 md:px-6">
                                     สถานะ
                                   </th>
-                                  <th scope="col" className="py-3 px-6">
+                                  <th scope="col" className="py-2 md:py-3 px-3 md:px-6">
                                       <span className="sr-only">Edit</span>
                                   </th>
                               </tr>
@@ -146,17 +146,17 @@ const Profile = () => {
                                   <tr key={key}
                                     className="font-sukhumvit bg-white border-b hover:bg-gray-50">
                                     <th scope="row"
-                                        className="py-4 px-6 text-xs md:text-base text-gray-900 whitespace-nowrap">
+                                        className="py-2 md:py-3 px-3 md:px-6 text-xs md:text-base text-gray-900">
                                       {quiz?.title}
                                     </th>
-                                    <td className="py-4 px-6 hidden md:flex">
+                                    <td className="py-3 md:py-4 px-3 md:px-6 hidden md:flex">
                                     </td>
-                                    <td className={"py-4 px-6 text-xs md:text-base font-bold" + (user?.checkList[key] ? " text-blue-400" : user?.checkList[key] === false ? " text-red-400" : " text-yellow-400")}>
+                                    <td className={"py-3 md:py-4 px-3 md:px-6 text-xs md:text-base font-bold" + (user?.checkList[key] ? " text-blue-400" : user?.checkList[key] === false ? " text-red-400" : " text-yellow-400")}>
                                       {
                                         user?.checkList[key] ? 'เช็คอินเรียบร้อยแล้ว' : user?.checkList[key] === false ? 'ไม่ได้เช็คอิน' : 'กำลังตรวจสอบ'
                                       }
                                     </td>
-                                    <td className="py-4 px-6 text-right">
+                                    <td className="py-3 md:py-4 px-3 md:px-6 text-right">
                                       {/*{*/}
                                       {/*  console.log(quiz?.title, quiz?.date.seconds, moment.unix(quiz?.date.seconds).add(-15,'minutes').format("yyyy-MM-DD hh:mm"))*/}
                                       {/*}*/}
