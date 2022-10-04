@@ -30,3 +30,8 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swal2-popup {
+  font-size: 1rem !important;
+  font-family: SukhumvitSet-Bold !important;
+}

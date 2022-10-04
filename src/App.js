@@ -15,13 +15,11 @@ function App() {
             return <Navigate to={'/profile'} />;
           case AuthenticationState.Unauthenticated:
             return (
-              <div className={'flex w-screen h-screen bg-blue-50'}>
-                <div className={'w-11/12 h-4/6 md:w-3/12 md:h-3/6 mx-auto my-auto'}>
+              <div className={'flex w-screen h-screen bg-blue-50 max-h-screen max-w-screen overflow-auto'}>
+                <div className={'w-11/12 h-4/6 md:w-3/12 md:h-3/6 mx-auto my-auto min-h-test'}>
                   <div className={'w-full h-full bg-white rounded-xl shadow-md'}>
                     <div className={'flex flex-col p-5 justify-center text-center'}>
                         <span className={'mt-5'}>
-                          <p>{moment().unix()}</p>
-                          <p>{ moment().format("yyyy-MM-DD hh:mm")}</p>
                           <p className={'font-sukhumvit font-bold text-2xl text-gray-600'}>ระบบเช็คชื่อเข้าติววิชา JavaScript</p>
                         </span>
                       <span className={'mt-5 mx-auto'}>
